@@ -3,8 +3,9 @@ import os
 from twilio.rest import Client
 import RPi.GPIO as GPIO
 
-RELATIVE_NUMBERS = [""]
-ORGINATE_NUMBER = "+15017122661"
+RELATIVE_NUMBERS = os.getenv("RELATIVE_NUMBERS", "") # your relative numbers comma-separated
+RELATIVE_NUMBERS = RELATIVE_NUMBERS.split(",")
+ORGINATE_NUMBER = os.getenv("RELATIVE_NUMBERS", "")
 
 HELP_TEXT = "Please help!! I have an emergency problem!"
 
