@@ -5,7 +5,7 @@ import RPi.GPIO as GPIO
 
 RELATIVE_NUMBERS = os.getenv("RELATIVE_NUMBERS", "") # your relative numbers comma-separated
 RELATIVE_NUMBERS = RELATIVE_NUMBERS.split(",")
-ORGINATE_NUMBER = os.getenv("RELATIVE_NUMBERS", "")
+ORGINATE_NUMBER = os.getenv("RELATIVE_NUMBERS", "") # should be one of your Twilio active number
 
 HELP_TEXT = "Please help!! I have an emergency problem!"
 
